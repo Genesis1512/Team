@@ -1,0 +1,259 @@
+/* General styles for the footer */
+.footer {
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap; /* Allows the footer content to wrap into new rows on smaller screens */
+    margin-bottom: 0;
+  }
+  
+  /* Footer content section */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    padding: 1%;
+    justify-content: space-evenly;
+    margin: 0.5%;
+    width: 30%; /* Default to 30% width */
+    border-radius: 10px;
+    height: auto; /* Height auto to fit the content */
+  }
+  
+  /* Footer item styling */
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+  }
+  
+  .footer-icon {
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+  }
+  
+  .footer-para {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Product and service section */
+  .footer-link-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-heading ul {
+    list-style-type: none;
+  }
+  
+  .footer-heading ul li {
+    font-size: 0.9rem;
+  }
+  
+  .footer-label {
+    font-size: 0.2rem;
+  }
+  
+  /* Footer copyright */
+  .footer-copyright {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* Form section */
+  .footer-form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-form-item label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  
+  .footer-form-item input,
+  .footer-form-item textarea {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 0.5px solid #767676;
+  }
+  
+  .footer-form-item textarea {
+    resize: vertical;
+  }
+  
+  .footer-button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .required {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: red;
+  }
+  
+  /* Policies and other links section */
+  .footer-policies-section {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-policies,
+  .footer-other-links {
+    width: 48%;
+  }
+  
+  .footer-policies-list,
+  .footer-other-links-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-policies-list li,
+  .footer-other-links-list li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .footer-policies-list b,
+  .footer-other-links-list b {
+    font-weight: bold;
+  }
+  
+  /* Social icons */
+  .footer-social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .footer-social-icon {
+    width: 3vw;
+    height: 3vw;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    /* Stacking the footer content vertically */
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content {
+      width: 90%; /* Take up more width on smaller screens */
+      margin: 10px 0; /* Adjust margin */
+      height: auto; /* Allow content to adjust height based on content */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    .footer-para {
+      font-size: 0.9rem;
+    }
+  
+    .footer-heading ul li {
+      font-size: 0.8rem;
+    }
+  
+    .footer-h4 {
+      font-size: 1rem;
+    }
+  
+    .footer-button {
+      font-size: 1rem;
+    }
+  
+    .footer-social-icon {
+      width: 8vw;
+      height: 8vw;
+    }
+  
+    .footer-policies,
+    .footer-other-links {
+      width: 100%; /* Take full width on smaller screens */
+    }
+
+    .footer-policies-section
+    {
+        text-align: center;
+    }
+  }
+  
+  /* Responsive styles for very small screens (mobile phones) */
+  @media screen and (max-width: 480px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content {
+      width: 100%; /* Take up the full width */
+    }
+  
+    .footer-item {
+      flex-direction: column; /* Stack the contact info vertically */
+      align-items: flex-start;
+    }
+  
+    .footer-icon {
+      width: 12vw; /* Make icons bigger on small screens */
+      height: 12vw;
+    }
+  
+    .footer-para {
+      font-size: 0.8rem;
+    }
+  
+    .footer-heading ul li {
+      font-size: 0.75rem;
+    }
+  
+    .footer-button {
+      font-size: 1rem;
+      width: 80%; /* Make button smaller */
+    }
+  
+    .footer-social-icon {
+      width: 10vw;
+      height: 10vw;
+    }
+
+    .footer-policies-section
+    {
+        text-align: center;
+    }
+  }
+
+  
+  

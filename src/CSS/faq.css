@@ -1,0 +1,101 @@
+/* FAQ Page Styling */
+.faq-page {
+    padding: 2vw;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  .faq-heading {
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-bottom: 1.5vw;
+  }
+  
+  /* Accordion Styles */
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .accordion-item {
+    border-radius: 8px;
+    padding: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .question h3 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .faq-button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .faq-button {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+    border: 2px solid transparent; /* Initially, no border */
+  }
+  
+  .faq-button.active {
+    background-color:#FFCD00; 
+    border: 1px solid black;  
+  }
+  
+  .faq-button:hover {
+    background-color:#FFCD00; 
+    border: 1px solid black;
+  }
+  
+  /* Answer Styles */
+  .answer {
+    margin-top: 1vw;
+    padding-top: 1vw;
+    border-top: 1px solid black;
+    font-size: 1.2vw;
+    color: #555;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .faq-heading {
+      font-size: 4vw;
+    }
+  
+    .question h3 {
+      font-size: 3vw;
+    }
+  
+    .faq-button {
+      width: 5vw;
+      height: 5vw;
+      font-size: 2.5vw;
+    }
+  
+    .answer {
+      font-size: 2.2vw;
+    }
+  }
+  
+
+
+ 

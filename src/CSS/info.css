@@ -1,0 +1,123 @@
+/* Button Page Styling */
+.button-page {
+  padding: 2vw;
+  max-width: 90%;
+  margin: auto;
+}
+
+.page-heading {
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+
+/* Container for buttons - Left aligned */
+.button-container {
+  display: flex;
+  gap: 2vw;
+  justify-content: flex-start; /* Keep buttons left aligned */
+  flex-wrap: nowrap; /* Ensure buttons stay on one line */
+}
+
+/* Button Styling */
+.category-button {
+  padding: 1vw 3vw;
+  font-size: 1.2vw;
+  background-color: #f9f9f9;
+  color: black;
+  border: 2px solid #ddd;
+  border-radius: 50px; /* Capsule shape */
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+  font-weight: 600;
+  white-space: nowrap; /* Prevent text from breaking */
+}
+
+.category-button:hover {
+  background-color: #e6e6e6; /* Light grey on hover */
+}
+
+/* Active Button (yellow when clicked) */
+.category-button.active {
+  background-color: #ffcd00;
+  border: 2px solid #ffcd00; /* Yellow border when active */
+}
+
+/* Content Container Styling */
+.content-container {
+  display: grid; /* Grid layout for responsive behavior */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamic number of columns */
+  gap: 2vw;
+  margin-top: 2vw;
+}
+
+/* Content Card Styling */
+.content-card {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Set height */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay Text on Card */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-overlay p {
+  margin: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .page-heading {
+    font-size: 4vw;
+  }
+
+  .category-button {
+    font-size: 1.7vw; /* Adjust font size for medium screens */
+    padding: 1.5vw 4vw; /* Adjust padding for medium screens */
+  }
+
+  .content-card {
+    height: 50vh; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .page-heading {
+    font-size: 5vw;
+  }
+
+  .category-button {
+    font-size: 1.5vw; /* Reduce button font size */
+    padding: 2vw 5vw; /* Adjust padding for smaller screens */
+  }
+
+  .content-card {
+    height: 40vh; /* Adjust height for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-button {
+    font-size: 4vw; /* Make font size smaller for very small screens */
+    padding: 3vw 6vw; /* Adjust padding for very small screens */
+  }
+
+  .content-card {
+    height: 35vh; /* Further adjust card height */
+  }
+}

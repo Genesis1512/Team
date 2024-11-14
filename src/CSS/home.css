@@ -1,0 +1,103 @@
+/* Header Styling */
+.header {
+  position: absolute; /* Change to fixed for consistent positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+   /* Ensure logo and links align correctly */
+  color: white;
+  
+  z-index: 10; /* Keep it on top of other elements */
+}
+
+.logo {
+  font-size: 2vw; /* Responsive font size */
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2%;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
+
+/* Carousel Styling */
+.home {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Elevating Excellence Text Styling */
+.topic {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-family: 'Termina Test', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-decoration: none;
+  z-index: 20;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .topic {
+    font-size: 2.2rem;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topic {
+    font-size: 1.7rem;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
